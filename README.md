@@ -1,8 +1,8 @@
-<![CDATA[<div align="center">
+<div align="center">
 
-# 🎬 Auto Video Creator
+# 🎬 Auto Video Generator
 
-**Transform scripts into stunning short-form videos with AI-generated visuals, voiceover, and captions — fully automated.**
+**Transform scripts into stunning short-form videos with AI-generated visuals, voiceover, and captions. Fully automated.**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
@@ -12,13 +12,18 @@
 
 ### 🎥 Example Output
 
-https://github.com/user-attachments/assets/video_1.mp4
+https://github.com/saadbenchakroun/auto-video-generator/raw/main/output/video_1.mp4
+
+<img src="output/preview.gif" width="480" />
 
 *Above: A video generated entirely from a script using this pipeline*
 
 </div>
 
 ---
+
+## Who this is For
+Ideal for creators, marketers, or developers who want to automate short-form video production.
 
 ## ✨ Features
 
@@ -47,8 +52,8 @@ https://github.com/user-attachments/assets/video_1.mp4
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/auto-video-creator.git
-cd auto-video-creator
+git clone https://github.com/saadkhalid-git/auto-video-generator.git
+cd auto-video-generator
 
 # Install dependencies
 pip install -r requirements.txt
@@ -86,7 +91,7 @@ python run.py
 ## 📁 Project Structure
 
 ```
-AUTO/
+auto-video-generator/
 ├── app/                        # Application modules
 │   ├── ui.py                   # GUI application
 │   ├── main.py                 # Pipeline orchestrator
@@ -174,19 +179,19 @@ The app will:
 
 ```
 ┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
-│  Google Sheets  │──▶│   Kokoro TTS    │──▶│     Whisper     │
+│  Google Sheets  │──►│   Kokoro TTS    │──►│     Whisper     │
 │  Fetch Scripts  │   │  Generate Audio │   │   Create SRT    │
 └─────────────────┘   └─────────────────┘   └─────────────────┘
                                                     │
 ┌─────────────────┐   ┌─────────────────┐           ▼
-│  Google Sheets  │◀──│     FFmpeg      │◀──┌─────────────────┐
+│  Google Sheets  │◄──│     FFmpeg      │◄──┌─────────────────┐
 │  Update Status  │   │  Final Assembly │   │   Cerebras AI   │
 └─────────────────┘   └─────────────────┘   │ Generate Prompts│
                              ▲              └─────────────────┘
                              │                      │
                       ┌─────────────────┐           ▼
                       │     OpenCV      │   ┌─────────────────┐
-                      │  Animate Clips  │◀──│  Cloudflare AI  │
+                      │  Animate Clips  │◄──│  Cloudflare AI  │
                       └─────────────────┘   │ Generate Images │
                                             └─────────────────┘
 ```
@@ -245,4 +250,3 @@ Built with amazing open-source tools:
 [Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/)
 
 </div>
-]]>
