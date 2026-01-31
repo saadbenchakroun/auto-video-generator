@@ -1,0 +1,12 @@
+openai
+customtkinter
+pillow
+requests
+mutagen
+gspread
+google-auth
+kokoro
+soundfile
+numpy
+opencv-python
+faster-whisper

@@ -1,0 +1,68 @@
+{
+    "api_keys": {
+        "cerebras": "your-cerebras-api-key",
+        "cloudflare_account_id": "your-cloudflare-account-id",
+        "cloudflare_api_token": "your-cloudflare-api-token"
+    },
+    "google_sheets": {
+        "credentials_file": "credentials.json",
+        "sheet_id": "your-google-sheet-id",
+        "worksheet_name": "Scripts",
+        "columns": {
+            "id": "id",
+            "script": "script",
+            "status": "created"
+        },
+        "search_keyword": "",
+        "status_values": {
+            "processing": "Processing",
+            "done": "Done",
+            "failed_audio": "Failed Audio",
+            "failed_srt": "Failed SRT",
+            "failed_images": "Failed Images",
+            "failed_assembly": "Failed Assembly"
+        }
+    },
+    "paths": {
+        "kokoro_model": "C:/path/to/kokoro_model",
+        "voice_path": "C:/path/to/kokoro_model/voices/voice_file.pt",
+        "whisper_model": "C:/path/to/faster-whisper-model/base.en",
+        "fonts": "C:/Windows/Fonts/arial.ttf",
+        "temp_dir": "assets/temp",
+        "output_dir": "output"
+    },
+    "video_settings": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "clip_duration": 4.0,
+        "negative_prompt": "blurry, low quality, text, watermark"
+    },
+    "ai_settings": {
+        "model": "llama3.1-70b",
+        "max_retries": 3,
+        "system_prompt": "You are an expert prompt engineer specializing in Stable Diffusion XL (SDXL). Generate visually cohesive, emotionally symbolic, and stylistically consistent image prompts.",
+        "fallback_prompts": [
+            "silhouette of a person standing alone",
+            "gold dust floating in dark void",
+            "broken golden chains in darkness"
+        ],
+        "general_fallback_prompt": "dark atmosphere, cinematic lighting, 4k"
+    },
+    "captions": {
+        "font_size": 52,
+        "position": "bottom",
+        "margin": 50,
+        "font_color": [
+            255,
+            255,
+            255
+        ],
+        "outline_color": [
+            0,
+            0,
+            0
+        ],
+        "outline_width": 3
+    }
+}
